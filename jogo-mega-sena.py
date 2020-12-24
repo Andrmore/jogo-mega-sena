@@ -5,7 +5,7 @@ Created on Thu Dec 24 12:10:54 2020
 @author: andre
 """
 
-#Imports necessários
+#imports necessários
 from random import randint as dado
 import ctypes
 
@@ -16,11 +16,11 @@ def dado60():
 #processamento do programa
 def main():
    
-    #loop do programa, 6 = botao sim e 7 = botao nao
+    #loop do programa, 6 = botão sim e 7 = botão não
     resposta = 6
     while resposta != 7:
    
-        #calculo dos numeros
+        #cálculo dos números
         n1 = n2 = n3 = n4 = n5= n6 = 0
         
         n1 = dado60()
@@ -45,7 +45,7 @@ def main():
         while n6 == n5 or n6 == n4 or n6 == n3 or n6 == n2 or n6 == n1:
             n6 = dado60()
         
-        #ordenacao do reseultado
+        #ordenação do resultado
         resultado = sorted([n1, n2, n3, n4, n5, n6], reverse=False)
         resultado = str(resultado)
         
